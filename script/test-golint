@@ -1,0 +1,6 @@
+#!/bin/sh
+set -eux
+source "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/common.sh"
+cd "${ROOT}"
+
+dockerwrap us.gcr.io/rsg-base-prod/golangci-lint:v1.43.0 golangci-lint run -v --timeout=300s

@@ -26,29 +26,32 @@ func main() {
 		fmt.Println(fmt.Errorf("could not convert initialDepth"))
 	}
 
-	// This secondary depth value will be used as for our first of two comparisons for each row scan.
 	scanner.Scan()
 	secondaryDepth, err := strconv.Atoi(scanner.Text())
 	if err != nil {
 		fmt.Println(fmt.Errorf("could not convert secondaryDepth"))
 	}
 
-	if secondaryDepth > initialDepth {
-		numIncreases++
+	scanner.Scan()
+	tertiaryDepth, err := strconv.Atoi(scanner.Text())
+	if err != nil {
+		fmt.Println(fmt.Errorf("could not convert tertiaryDepth"))
 	}
 
 	for scanner.Scan() {
-		// This tertiary depth value will be used as the second of two comparisons for each row scan.
-		tertiaryDepth, err := strconv.Atoi(scanner.Text())
+		quaternaryDepth, err := strconv.Atoi(scanner.Text())
 		if err != nil {
 			fmt.Println(fmt.Errorf("could not convert tertiaryDepth"))
 		}
 
-		if tertiaryDepth > secondaryDepth {
+		if initialDepth + secondaryDepth + tertiaryDepth < secondaryDepth + tertiaryDepth + quaternaryDepth {
 			numIncreases++
 		}
-		secondaryDepth = tertiaryDepth
-	}
 
+		// Shift each value in the sliding window one to the right
+		initialDepth = secondaryDepth
+		secondaryDepth = tertiaryDepth
+		tertiaryDepth = quaternaryDepth
+	}
 	fmt.Println(numIncreases)
 }

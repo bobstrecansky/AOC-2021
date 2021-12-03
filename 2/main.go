@@ -32,6 +32,8 @@ func readFile(file string) []string {
 func calcFinalPosition(data []string) int {
 	horizontal := 0
 	depth := 0
+	aim := 0
+
 	for _, j := range data {
 		line := strings.Fields(j)
 		num, err := strconv.Atoi(line[1])
@@ -43,10 +45,13 @@ func calcFinalPosition(data []string) int {
 		switch line[0] {
 		case "forward":
 			horizontal += num
+			depth += num * aim
+
 		case "down":
-			depth += num
+			aim += num
+
 		case "up":
-			depth -= num
+			aim -= num
 		}
 	}
 	return horizontal * depth
@@ -55,4 +60,4 @@ func calcFinalPosition(data []string) int {
 func main() {
 	data := readFile("./day2input.txt")
 	fmt.Println(calcFinalPosition(data))
-	}
+}

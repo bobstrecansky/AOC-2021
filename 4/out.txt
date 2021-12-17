@@ -1,0 +1,58 @@
+ALL BOARDS:  [[[14 21 17 24 4] [10 16 15 9 19] [18 8 23 26 20] [22 11 13 6 5] [2 0 12 3 7]] []]
+BINGO RESULTS:  [7 4 9 5 11 17 23 2 0 14 21 24 10 16 13 6 15 25 12 22 18 20 8 19 3 26 1]
+BINGO RESULT:  7
+BOARD:  [[14 21 17 24 4] [10 16 15 9 19] [18 8 23 26 20] [22 11 13 6 5] [2 0 12 3 -1]]
+BOARD[row][i] :  14
+BOARD[row][i] :  10
+BOARD[row][i] :  18
+BOARD[row][i] :  22
+BOARD[row][i] :  2
+BINGO RESULT:  4
+BOARD:  [[14 21 17 24 -1] [10 16 15 9 19] [18 8 23 26 20] [22 11 13 6 5] [2 0 12 3 -1]]
+BOARD[row][i] :  14
+BOARD[row][i] :  10
+BOARD[row][i] :  18
+BOARD[row][i] :  22
+BOARD[row][i] :  2
+BINGO RESULT:  9
+BOARD:  [[14 21 17 24 -1] [10 16 15 -1 19] [18 8 23 26 20] [22 11 13 6 5] [2 0 12 3 -1]]
+BOARD[row][i] :  14
+BOARD[row][i] :  10
+BOARD[row][i] :  18
+BOARD[row][i] :  22
+BOARD[row][i] :  2
+BINGO RESULT:  5
+BOARD:  [[14 21 17 24 -1] [10 16 15 -1 19] [18 8 23 26 20] [22 11 13 6 -1] [2 0 12 3 -1]]
+BOARD[row][i] :  14
+BOARD[row][i] :  10
+BOARD[row][i] :  18
+BOARD[row][i] :  22
+BOARD[row][i] :  2
+BINGO RESULT:  11
+BOARD:  [[14 21 17 24 -1] [10 16 15 -1 19] [18 8 23 26 20] [22 -1 13 6 -1] [2 0 12 3 -1]]
+BOARD[row][i] :  14
+BOARD[row][i] :  10
+BOARD[row][i] :  18
+BOARD[row][i] :  22
+BOARD[row][i] :  2
+BINGO RESULT:  17
+BOARD:  [[14 21 -1 24 -1] [10 16 15 -1 19] [18 8 23 26 20] [22 -1 13 6 -1] [2 0 12 3 -1]]
+BOARD[row][i] :  14
+BOARD[row][i] :  10
+BOARD[row][i] :  18
+BOARD[row][i] :  22
+BOARD[row][i] :  2
+BINGO RESULT:  23
+BOARD:  [[14 21 -1 24 -1] [10 16 15 -1 19] [18 8 -1 26 20] [22 -1 13 6 -1] [2 0 12 3 -1]]
+BOARD[row][i] :  14
+BOARD[row][i] :  10
+BOARD[row][i] :  18
+BOARD[row][i] :  22
+BOARD[row][i] :  2
+BINGO RESULT:  2
+BOARD:  [[14 21 -1 24 -1] [10 16 15 -1 19] [18 8 -1 26 20] [22 -1 13 6 -1] [-1 0 12 3 -1]]
+BOARD[row][i] :  14
+BOARD[row][i] :  10
+BOARD[row][i] :  18
+BOARD[row][i] :  22
+BOARD[row][i] :  -1
